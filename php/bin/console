@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+namespace App\Bin;
+require __DIR__ . "/../vendor/autoload.php";
+
+use Symfony\Component\Console\Application;
+use App\Commands\LeetCodeGenerator\LeetCodeGeneratorCommand;
+use App\Commands\PhpUnitCommand;
+
+$application = new Application();
+
+$application->add(new LeetCodeGeneratorCommand());
+$application->add(new PhpUnitCommand());
+
+$application->run();
