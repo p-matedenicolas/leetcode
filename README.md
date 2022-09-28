@@ -4,8 +4,6 @@ Solutions to problems in [https://leetcode.com/](https://leetcode.com/)
 
 ## Prerequisites
 
-- Node.js 16.14+
-  - Used for prettier
 - PHP 7.4+
 - Composer 2+
 

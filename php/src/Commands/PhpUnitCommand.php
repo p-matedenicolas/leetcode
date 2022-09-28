@@ -14,9 +14,8 @@ class PhpUnitCommand extends Command
 
     protected static $defaultDescription = "Launches php unit tests";
 
-    protected function configure(
-
-    ): void {
+    protected function configure(): void
+    {
         $this->setHelp(self::$defaultDescription)->addArgument(
             "unit_test_num",
             InputArgument::OPTIONAL
@@ -24,8 +23,7 @@ class PhpUnitCommand extends Command
     }
 
     protected function execute(
-        InputInterface
-        $input,
+        InputInterface  $input,
         OutputInterface $output
     ): int {
         $unitTestNum = $input->getArgument("unit_test_num");

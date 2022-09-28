@@ -4,9 +4,9 @@
 namespace App\Bin;
 require __DIR__ . "/../vendor/autoload.php";
 
-use Symfony\Component\Console\Application;
 use App\Commands\LeetCodeGenerator\LeetCodeGeneratorCommand;
 use App\Commands\PhpUnitCommand;
+use Symfony\Component\Console\Application;
 
 $application = new Application();
 

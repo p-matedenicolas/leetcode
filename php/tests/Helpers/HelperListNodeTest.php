@@ -2,8 +2,8 @@
 
 namespace App\Tests\Helpers;
 
-use PHPUnit\Framework\TestCase;
 use App\Helpers\ListNode;
+use PHPUnit\Framework\TestCase;
 
 final class HelperListNodeTest extends TestCase
 {

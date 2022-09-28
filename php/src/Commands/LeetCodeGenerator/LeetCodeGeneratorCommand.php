@@ -25,7 +25,7 @@ class LeetCodeGeneratorCommand extends Command
     }
 
     protected function execute(
-        InputInterface $input,
+        InputInterface  $input,
         OutputInterface $output
     ): int {
         $filesystem = new Filesystem();

@@ -38,15 +38,11 @@ class Solution
 
             if (
                 isset(
-                    self::ROMAN_SUBSTRACTION_VALUES[
-                        $currentLetter . $nextLetter
-                    ]
+                    self::ROMAN_SUBSTRACTION_VALUES[$currentLetter . $nextLetter]
                 )
             ) {
                 $total +=
-                    self::ROMAN_SUBSTRACTION_VALUES[
-                        $currentLetter . $nextLetter
-                    ];
+                    self::ROMAN_SUBSTRACTION_VALUES[$currentLetter . $nextLetter];
                 $i++;
             } elseif (isset(self::ROMAN_VALUES[$currentLetter])) {
                 $total += self::ROMAN_VALUES[$currentLetter];

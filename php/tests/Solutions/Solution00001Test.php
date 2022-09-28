@@ -2,8 +2,8 @@
 
 namespace App\Tests\Solutions;
 
-use PHPUnit\Framework\TestCase;
 use App\Solutions\Solution00001\Solution;
+use PHPUnit\Framework\TestCase;
 
 final class Solution00001Test extends TestCase
 {

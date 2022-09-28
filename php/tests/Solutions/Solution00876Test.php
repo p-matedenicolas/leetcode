@@ -2,9 +2,9 @@
 
 namespace App\Tests\Solutions;
 
-use PHPUnit\Framework\TestCase;
 use App\Helpers\ListNode;
 use App\Solutions\Solution00876\Solution;
+use PHPUnit\Framework\TestCase;
 
 final class Solution00876Test extends TestCase
 {
