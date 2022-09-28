@@ -11,16 +11,18 @@ Solutions to problems in [https://leetcode.com/](https://leetcode.com/)
 
 ## Commands
 
+> Important to run the commands from the `php` directory
+
 Run php unit on all tests or a specific problem number to test
 
 ```shell
-php php/bin/console test:leetcode [problem_number]
+php bin/console test:leetcode [problem_number]
 ```
 
 Generate a new Solution and Test classes for a problem number
 
 ```shell
-php php/bin/console generate:leetcode problem_number problem_method
+php bin/console generate:leetcode problem_number problem_method
 ```
 
 ## License

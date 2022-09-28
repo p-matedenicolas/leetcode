@@ -8,7 +8,7 @@ class Solution
      * @param String $s
      * @return Integer
      */
-    function longestPalindrome($s)
+    public function longestPalindrome($s)
     {
         $map = [];
         $longestPalindrome = 0;

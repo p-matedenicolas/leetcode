@@ -6,24 +6,26 @@ use App\Helpers\ListNode;
 
 class Solution
 {
-  /**
-   * @param ListNode $head
-   * @return ListNode
-   */
-  function reverseList($head)
-  {
-    $prevListNode = null;
-    $currentListNode = $head;
-    $nextListNode = $currentListNode !== null ? $currentListNode->next : null;
+    /**
+     * @param ListNode|null $head
+     * @return ListNode
+     */
+    public function reverseList($head)
+    {
+        $prevListNode = null;
+        $currentListNode = $head;
+        $nextListNode =
+            $currentListNode !== null ? $currentListNode->next : null;
 
-    while ($currentListNode !== null) {
-      $currentListNode->next = $prevListNode;
+        while ($currentListNode !== null) {
+            $currentListNode->next = $prevListNode;
 
-      $prevListNode = $currentListNode;
-      $currentListNode = $nextListNode;
-      $nextListNode = $currentListNode !== null ? $currentListNode->next : null;
+            $prevListNode = $currentListNode;
+            $currentListNode = $nextListNode;
+            $nextListNode =
+                $currentListNode !== null ? $currentListNode->next : null;
+        }
+
+        return $prevListNode;
     }
-
-    return $prevListNode;
-  }
 }

@@ -11,6 +11,12 @@
     "twig/twig": "3.0",
     "symfony/filesystem": "^5.4",
     "symfony/console": "^5.4",
-    "symfony/process": "^5.4"
+    "symfony/process": "^5.4",
+    "friendsofphp/php-cs-fixer": "^3.11"
+  },
+  "scripts": {
+    "php-cs-fixer": [
+      "./vendor/bin/php-cs-fixer fix -vvv --show-progress=dots"
+    ]
   }
 }

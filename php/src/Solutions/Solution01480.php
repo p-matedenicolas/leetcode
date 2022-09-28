@@ -4,21 +4,21 @@ namespace App\Solutions\Solution01480;
 
 class Solution
 {
-  /**
-   * @param Integer[] $nums
-   * @return Integer[]
-   */
-  function runningSum($nums)
-  {
-    $result = [];
-    $sum = 0;
+    /**
+     * @param Integer[] $nums
+     * @return Integer[]
+     */
+    public function runningSum($nums)
+    {
+        $result = [];
+        $sum = 0;
 
-    foreach ($nums as $num) {
-      $sum += $num;
+        foreach ($nums as $num) {
+            $sum += $num;
 
-      $result[] = $sum;
+            $result[] = $sum;
+        }
+
+        return $result;
     }
-
-    return $result;
-  }
 }

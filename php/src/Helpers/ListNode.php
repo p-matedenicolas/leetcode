@@ -7,42 +7,43 @@ namespace App\Helpers;
  */
 class ListNode
 {
-  public $val = 0;
-  public $next = null;
-  function __construct($val = 0, $next = null)
-  {
-    $this->val = $val;
-    $this->next = $next;
-  }
+    public $val = 0;
+    public $next = null;
 
-  public static function arrayToSortedList($listArray)
-  {
-    $prevListNode = null;
-    $listNodeHead = null;
-
-    foreach ($listArray as $listValue) {
-      $currentListNode = new ListNode($listValue);
-
-      if ($prevListNode !== null) {
-        $prevListNode->next = $currentListNode;
-      } else {
-        $listNodeHead = $currentListNode;
-      }
-
-      $prevListNode = $currentListNode;
+    public function __construct($val = 0, $next = null)
+    {
+        $this->val = $val;
+        $this->next = $next;
     }
 
-    return $listNodeHead;
-  }
+    public static function arrayToSortedList($listArray)
+    {
+        $prevListNode = null;
+        $listNodeHead = null;
 
-  public static function sortedListToArray($sortedList)
-  {
-    $listArray = [];
-    while ($sortedList !== null) {
-      $listArray[] = $sortedList->val;
-      $sortedList = $sortedList->next;
+        foreach ($listArray as $listValue) {
+            $currentListNode = new ListNode($listValue);
+
+            if ($prevListNode !== null) {
+                $prevListNode->next = $currentListNode;
+            } else {
+                $listNodeHead = $currentListNode;
+            }
+
+            $prevListNode = $currentListNode;
+        }
+
+        return $listNodeHead;
     }
 
-    return $listArray;
-  }
+    public static function sortedListToArray($sortedList)
+    {
+        $listArray = [];
+        while ($sortedList !== null) {
+            $listArray[] = $sortedList->val;
+            $sortedList = $sortedList->next;
+        }
+
+        return $listArray;
+    }
 }

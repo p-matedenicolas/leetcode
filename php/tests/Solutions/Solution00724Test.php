@@ -7,47 +7,47 @@ use App\Solutions\Solution00724\Solution;
 
 final class Solution00724Test extends TestCase
 {
-  public function testExample1(): void
-  {
-    $input = [1, 7, 3, 6, 5, 6];
-    $output = 3;
+    public function testExample1(): void
+    {
+        $input = [1, 7, 3, 6, 5, 6];
+        $output = 3;
 
-    $solution = new Solution();
-    $result = $solution->pivotIndex($input);
+        $solution = new Solution();
+        $result = $solution->pivotIndex($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExample2(): void
-  {
-    $input = [1, 2, 3];
-    $output = -1;
+    public function testExample2(): void
+    {
+        $input = [1, 2, 3];
+        $output = -1;
 
-    $solution = new Solution();
-    $result = $solution->pivotIndex($input);
+        $solution = new Solution();
+        $result = $solution->pivotIndex($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExample3(): void
-  {
-    $input = [2, 1, -1];
-    $output = 0;
+    public function testExample3(): void
+    {
+        $input = [2, 1, -1];
+        $output = 0;
 
-    $solution = new Solution();
-    $result = $solution->pivotIndex($input);
+        $solution = new Solution();
+        $result = $solution->pivotIndex($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExampleExtra1(): void
-  {
-    $input = [0];
-    $output = 0;
+    public function testExampleExtra1(): void
+    {
+        $input = [0];
+        $output = 0;
 
-    $solution = new Solution();
-    $result = $solution->pivotIndex($input);
+        $solution = new Solution();
+        $result = $solution->pivotIndex($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 }

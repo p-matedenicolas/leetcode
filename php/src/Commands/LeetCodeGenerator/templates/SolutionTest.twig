@@ -7,13 +7,13 @@ use App\Solutions\Solution{{ num }}\Solution;
 
 final class Solution{{ num }}Test extends TestCase
 {
-  public function testExample1(): void
-  {
-    $input = [];
-    $output = [];
+public function testExample1(): void
+{
+$input = [];
+$output = [];
 
-    $solution = new Solution();
-    $result = $solution->{{ name }}($input);
+$solution = new Solution();
+$result = $solution->{{ name }}($input);
 
 $this->assertEquals($result, $output);
 }
@@ -40,4 +40,3 @@ $result = $solution->{{ name }}($input);
 $this->assertEquals($result, $output);
 }
 }
-?>

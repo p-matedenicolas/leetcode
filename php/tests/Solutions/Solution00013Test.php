@@ -7,47 +7,47 @@ use App\Solutions\Solution00013\Solution;
 
 final class Solution00013Test extends TestCase
 {
-  public function testExample1(): void
-  {
-    $input = "III";
-    $output = 3;
+    public function testExample1(): void
+    {
+        $input = "III";
+        $output = 3;
 
-    $solution = new Solution();
-    $result = $solution->romanToInt($input);
+        $solution = new Solution();
+        $result = $solution->romanToInt($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExample2(): void
-  {
-    $input = "LVIII";
-    $output = 58;
+    public function testExample2(): void
+    {
+        $input = "LVIII";
+        $output = 58;
 
-    $solution = new Solution();
-    $result = $solution->romanToInt($input);
+        $solution = new Solution();
+        $result = $solution->romanToInt($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExample3(): void
-  {
-    $input = "MCMXCIV";
-    $output = 1994;
+    public function testExample3(): void
+    {
+        $input = "MCMXCIV";
+        $output = 1994;
 
-    $solution = new Solution();
-    $result = $solution->romanToInt($input);
+        $solution = new Solution();
+        $result = $solution->romanToInt($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 
-  public function testExampleExtra1(): void
-  {
-    $input = "DCXXI";
-    $output = 621;
+    public function testExampleExtra1(): void
+    {
+        $input = "DCXXI";
+        $output = 621;
 
-    $solution = new Solution();
-    $result = $solution->romanToInt($input);
+        $solution = new Solution();
+        $result = $solution->romanToInt($input);
 
-    $this->assertEquals($result, $output);
-  }
+        $this->assertEquals($result, $output);
+    }
 }
