@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00013\Solution;
+use App\Solutions\Solution00013;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00013Test extends TestCase
@@ -12,7 +12,7 @@ final class Solution00013Test extends TestCase
         $input = "III";
         $output = 3;
 
-        $solution = new Solution();
+        $solution = new Solution00013();
         $result = $solution->romanToInt($input);
 
         $this->assertEquals($result, $output);
@@ -23,7 +23,7 @@ final class Solution00013Test extends TestCase
         $input = "LVIII";
         $output = 58;
 
-        $solution = new Solution();
+        $solution = new Solution00013();
         $result = $solution->romanToInt($input);
 
         $this->assertEquals($result, $output);
@@ -34,7 +34,7 @@ final class Solution00013Test extends TestCase
         $input = "MCMXCIV";
         $output = 1994;
 
-        $solution = new Solution();
+        $solution = new Solution00013();
         $result = $solution->romanToInt($input);
 
         $this->assertEquals($result, $output);
@@ -45,7 +45,7 @@ final class Solution00013Test extends TestCase
         $input = "DCXXI";
         $output = 621;
 
-        $solution = new Solution();
+        $solution = new Solution00013();
         $result = $solution->romanToInt($input);
 
         $this->assertEquals($result, $output);

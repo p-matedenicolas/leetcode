@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Solutions\Solution00409;
+namespace App\Solutions;
 
-class Solution
+class Solution00409
 {
     /**
      * @param String $s

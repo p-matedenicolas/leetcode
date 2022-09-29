@@ -3,7 +3,7 @@
 namespace App\Tests\Solutions;
 
 use App\Helpers\ListNode;
-use App\Solutions\Solution00021\Solution;
+use App\Solutions\Solution00021;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00021Test extends TestCase
@@ -14,7 +14,7 @@ final class Solution00021Test extends TestCase
         $input2 = ListNode::arrayToSortedList([1, 3, 4]);
         $output = [1, 1, 2, 3, 4, 4];
 
-        $solution = new Solution();
+        $solution = new Solution00021();
         $result = $solution->mergeTwoLists($input1, $input2);
         $result = ListNode::sortedListToArray($result);
 
@@ -27,7 +27,7 @@ final class Solution00021Test extends TestCase
         $input2 = ListNode::arrayToSortedList([]);
         $output = [];
 
-        $solution = new Solution();
+        $solution = new Solution00021();
         $result = $solution->mergeTwoLists($input1, $input2);
         $result = ListNode::sortedListToArray($result);
 
@@ -40,7 +40,7 @@ final class Solution00021Test extends TestCase
         $input2 = ListNode::arrayToSortedList([0]);
         $output = [0];
 
-        $solution = new Solution();
+        $solution = new Solution00021();
         $result = $solution->mergeTwoLists($input1, $input2);
         $result = ListNode::sortedListToArray($result);
 

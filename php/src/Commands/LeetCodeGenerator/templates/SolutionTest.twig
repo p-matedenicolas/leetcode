@@ -3,7 +3,7 @@
 namespace App\Tests\Solutions;
 
 use PHPUnit\Framework\TestCase;
-use App\Solutions\Solution{{ num }}\Solution;
+use App\Solutions\Solution{{ num }};
 
 final class Solution{{ num }}Test extends TestCase
 {
@@ -12,7 +12,7 @@ public function testExample1(): void
 $input = [];
 $output = [];
 
-$solution = new Solution();
+$solution = new Solution{{ num }}();
 $result = $solution->{{ name }}($input);
 
 $this->assertEquals($result, $output);
@@ -23,7 +23,7 @@ public function testExample2(): void
 $input = [];
 $output = [];
 
-$solution = new Solution();
+$solution = new Solution{{ num }}();
 $result = $solution->{{ name }}($input);
 
 $this->assertEquals($result, $output);
@@ -34,7 +34,7 @@ public function testExample3(): void
 $input = [];
 $output = [];
 
-$solution = new Solution();
+$solution = new Solution{{ num }}();
 $result = $solution->{{ name }}($input);
 
 $this->assertEquals($result, $output);

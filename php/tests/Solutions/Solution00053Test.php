@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00053\Solution;
+use App\Solutions\Solution00053;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00053Test extends TestCase
@@ -12,7 +12,7 @@ final class Solution00053Test extends TestCase
         $input = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
         $output = 6;
 
-        $solution = new Solution();
+        $solution = new Solution00053();
         $result = $solution->maxSubArray($input);
 
         $this->assertEquals($result, $output);
@@ -23,7 +23,7 @@ final class Solution00053Test extends TestCase
         $input = [1];
         $output = 1;
 
-        $solution = new Solution();
+        $solution = new Solution00053();
         $result = $solution->maxSubArray($input);
 
         $this->assertEquals($result, $output);
@@ -34,7 +34,7 @@ final class Solution00053Test extends TestCase
         $input = [5, 4, -1, 7, 8];
         $output = 23;
 
-        $solution = new Solution();
+        $solution = new Solution00053();
         $result = $solution->maxSubArray($input);
 
         $this->assertEquals($result, $output);

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Solutions\Solution00704;
+namespace App\Solutions;
 
-class Solution
+class Solution00704
 {
     /**
      * @param Integer[] $nums

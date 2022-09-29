@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Solutions\Solution00013;
+namespace App\Solutions;
 
-class Solution
+class Solution00013
 {
     public const ROMAN_VALUES = [
         "I" => 1,

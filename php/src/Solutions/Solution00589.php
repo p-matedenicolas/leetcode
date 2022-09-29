@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Solutions\Solution00589;
+namespace App\Solutions;
 
 use App\Helpers\Node;
 
-class Solution
+class Solution00589
 {
     /**
      * @param Node $root

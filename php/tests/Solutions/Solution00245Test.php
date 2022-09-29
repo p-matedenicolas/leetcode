@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00245\Solution;
+use App\Solutions\Solution00245;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00245Test extends TestCase
@@ -13,7 +13,7 @@ final class Solution00245Test extends TestCase
         $input2 = "add";
         $output = true;
 
-        $solution = new Solution();
+        $solution = new Solution00245();
         $result = $solution->isIsomorphic($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -25,7 +25,7 @@ final class Solution00245Test extends TestCase
         $input2 = "bar";
         $output = false;
 
-        $solution = new Solution();
+        $solution = new Solution00245();
         $result = $solution->isIsomorphic($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -37,7 +37,7 @@ final class Solution00245Test extends TestCase
         $input2 = "title";
         $output = true;
 
-        $solution = new Solution();
+        $solution = new Solution00245();
         $result = $solution->isIsomorphic($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -49,7 +49,7 @@ final class Solution00245Test extends TestCase
         $input2 = "baba";
         $output = false;
 
-        $solution = new Solution();
+        $solution = new Solution00245();
         $result = $solution->isIsomorphic($input1, $input2);
 
         $this->assertEquals($result, $output);

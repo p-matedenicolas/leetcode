@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00724\Solution;
+use App\Solutions\Solution00724;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00724Test extends TestCase
@@ -12,7 +12,7 @@ final class Solution00724Test extends TestCase
         $input = [1, 7, 3, 6, 5, 6];
         $output = 3;
 
-        $solution = new Solution();
+        $solution = new Solution00724();
         $result = $solution->pivotIndex($input);
 
         $this->assertEquals($result, $output);
@@ -23,7 +23,7 @@ final class Solution00724Test extends TestCase
         $input = [1, 2, 3];
         $output = -1;
 
-        $solution = new Solution();
+        $solution = new Solution00724();
         $result = $solution->pivotIndex($input);
 
         $this->assertEquals($result, $output);
@@ -34,7 +34,7 @@ final class Solution00724Test extends TestCase
         $input = [2, 1, -1];
         $output = 0;
 
-        $solution = new Solution();
+        $solution = new Solution00724();
         $result = $solution->pivotIndex($input);
 
         $this->assertEquals($result, $output);
@@ -45,7 +45,7 @@ final class Solution00724Test extends TestCase
         $input = [0];
         $output = 0;
 
-        $solution = new Solution();
+        $solution = new Solution00724();
         $result = $solution->pivotIndex($input);
 
         $this->assertEquals($result, $output);

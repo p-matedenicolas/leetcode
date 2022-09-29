@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00009\Solution;
+use App\Solutions\Solution00009;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00009Test extends TestCase
@@ -12,7 +12,7 @@ final class Solution00009Test extends TestCase
         $input = 121;
         $output = true;
 
-        $solution = new Solution();
+        $solution = new Solution00009();
         $result = $solution->isPalindrome($input);
 
         $this->assertEquals($result, $output);
@@ -23,7 +23,7 @@ final class Solution00009Test extends TestCase
         $input = -121;
         $output = false;
 
-        $solution = new Solution();
+        $solution = new Solution00009();
         $result = $solution->isPalindrome($input);
 
         $this->assertEquals($result, $output);
@@ -34,7 +34,7 @@ final class Solution00009Test extends TestCase
         $input = 10;
         $output = false;
 
-        $solution = new Solution();
+        $solution = new Solution00009();
         $result = $solution->isPalindrome($input);
 
         $this->assertEquals($result, $output);

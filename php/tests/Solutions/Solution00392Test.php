@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00392\Solution;
+use App\Solutions\Solution00392;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00392Test extends TestCase
@@ -13,7 +13,7 @@ final class Solution00392Test extends TestCase
         $input2 = "ahbgdc";
         $output = true;
 
-        $solution = new Solution();
+        $solution = new Solution00392();
         $result = $solution->isSubsequence($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -25,7 +25,7 @@ final class Solution00392Test extends TestCase
         $input2 = "ahbgdc";
         $output = false;
 
-        $solution = new Solution();
+        $solution = new Solution00392();
         $result = $solution->isSubsequence($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -37,7 +37,7 @@ final class Solution00392Test extends TestCase
         $input2 = "ahbgdc";
         $output = true;
 
-        $solution = new Solution();
+        $solution = new Solution00392();
         $result = $solution->isSubsequence($input1, $input2);
 
         $this->assertEquals($result, $output);

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Solutions\Solution00876;
+namespace App\Solutions;
 
 use App\Helpers\ListNode;
 
-class Solution
+class Solution00876
 {
     /**
      * @param ListNode $head

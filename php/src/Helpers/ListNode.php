@@ -10,12 +10,20 @@ class ListNode
     public $val = 0;
     public $next = null;
 
+    /**
+     * @param $val
+     * @param $next
+     */
     public function __construct($val = 0, $next = null)
     {
         $this->val = $val;
         $this->next = $next;
     }
 
+    /**
+     * @param $listArray
+     * @return ListNode|null
+     */
     public static function arrayToSortedList($listArray)
     {
         $prevListNode = null;
@@ -36,6 +44,10 @@ class ListNode
         return $listNodeHead;
     }
 
+    /**
+     * @param $sortedList
+     * @return array
+     */
     public static function sortedListToArray($sortedList)
     {
         $listArray = [];

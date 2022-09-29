@@ -2,7 +2,7 @@
 
 namespace App\Tests\Solutions;
 
-use App\Solutions\Solution00704\Solution;
+use App\Solutions\Solution00704;
 use PHPUnit\Framework\TestCase;
 
 final class Solution00704Test extends TestCase
@@ -13,7 +13,7 @@ final class Solution00704Test extends TestCase
         $input2 = 9;
         $output = 4;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -25,7 +25,7 @@ final class Solution00704Test extends TestCase
         $input2 = 2;
         $output = -1;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -37,7 +37,7 @@ final class Solution00704Test extends TestCase
         $input2 = 12;
         $output = 5;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -49,7 +49,7 @@ final class Solution00704Test extends TestCase
         $input2 = 5;
         $output = 0;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -61,7 +61,7 @@ final class Solution00704Test extends TestCase
         $input2 = 5;
         $output = 1;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -73,7 +73,7 @@ final class Solution00704Test extends TestCase
         $input2 = 5;
         $output = 0;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -85,7 +85,7 @@ final class Solution00704Test extends TestCase
         $input2 = 5;
         $output = 0;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
@@ -97,7 +97,7 @@ final class Solution00704Test extends TestCase
         $input2 = 13;
         $output = -1;
 
-        $solution = new Solution();
+        $solution = new Solution00704();
         $result = $solution->search($input1, $input2);
 
         $this->assertEquals($result, $output);
