@@ -41,3 +41,7 @@ composer.phar
 /build/
 
 # End of https://www.toptal.com/developers/gitignore/api/phpunit,composer,php-cs-fixer,phpcodesniffer
+
+# My own
+
+/.idea
